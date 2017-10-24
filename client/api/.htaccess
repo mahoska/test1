@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /api/
+#courses
+RewriteRule (.*) http://192.168.0.15/~user15/BOOK_SHOP/server/api/$1 [P]
+
+#home
+##RewriteRule (.*) http://localhost:88/BOOK_SHOP/server/api/$1 [P]

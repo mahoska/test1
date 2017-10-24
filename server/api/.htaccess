@@ -1,0 +1,10 @@
+RewriteEngine On
+#courses
+RewriteBase /~user15/BOOK_SHOP/server/api/shop/
+#home
+##RewriteBase /BOOK_SHOP/server/api/shop/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ index.php
+
